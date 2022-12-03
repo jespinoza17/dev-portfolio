@@ -5,7 +5,7 @@ import styled from "styled-components";
 // Data
 import { Blog } from "../data";
 // Icons
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const StyledSocialLinks = styled.div`
   a {
@@ -13,8 +13,10 @@ const StyledSocialLinks = styled.div`
   }
 `;
 
+const linkedInUrl = 'https://www.linkedin.com/in/espinoza-juan/';
+
 export default function SocialLinks() {
-  const { blog, html_url } = useSelector(selectData);
+  const { blog, html_url, twitter_username } = useSelector(selectData);
 
   return (
     <StyledSocialLinks>
@@ -30,6 +32,20 @@ export default function SocialLinks() {
           {Blog}
         </a>
       )}
+      <a
+        href={`https://twitter.com/${twitter_username}`}
+        aria-label="Check out my Twitter!"
+        className="link-icons"
+      >
+        <FaTwitter />
+      </a>
+      <a
+        href={linkedInUrl}
+        aria-label="Check out my LinkedIn."
+        className="link-icons"
+      >
+        <FaLinkedin />
+      </a>
     </StyledSocialLinks>
   );
 }
