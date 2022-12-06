@@ -9,6 +9,7 @@ import {
 import { fetchGitHubReops } from "./pages/allProjectsSlice";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import { Analytics } from '@vercel/analytics/react';
 // Components
 import { Container } from "react-bootstrap";
 import { Loading } from "./components/globalStyledComponents";
@@ -63,6 +64,7 @@ export default function App() {
         <Container className="d-flex vh-100 align-items-center">
           <Loading />
         </Container>
+        <Analytics />
       </ThemeProvider>
     );
   } else if (error) {
@@ -72,6 +74,7 @@ export default function App() {
         <Container className="d-flex vh-100 align-items-center justify-content-center">
           <h2>{error}</h2>
         </Container>
+        <Analytics />
       </ThemeProvider>
     );
   } else {
@@ -86,6 +89,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ThemeProvider>
+        <Analytics />
       </HashRouter>
     );
   }
