@@ -1,16 +1,12 @@
-[![GitHub Repo stars](https://img.shields.io/github/stars/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github)](https://github.com/mshuber1981/github-react-portfolio-template/stargazers/) [![GitHub Repo Forks](https://img.shields.io/github/forks/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github&label=Forks)](https://github.com/mshuber1981/github-react-portfolio-template/network/members)
+# A Dev Portfolio site in React
 
-# A React Portfolio Template for GitHub
-
-A performant, accessible, progressive React portfolio template that uses the [GitHub REST API](https://docs.github.com/en/free-pro-team@latest/rest).
-
-Add your GitHub username once and all of your info will automatically be updated. Deploy to GitHub pages in a few simple steps.
+Inspired by https://github.com/mshuber1981/github-react-portfolio-template
 
 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ![Page Speed](/README_images/speed.png)
 
-### <a href="https://mshuber1981.github.io/github-react-portfolio-template/#/">LIVE DEMO</a>
+### <a href="dev-portfolio-snowy-pi.vercel.app">LIVE DEMO</a>
 
 ![Project Preview](/README_images/preview.png)
 
@@ -73,21 +69,6 @@ Add your GitHub username once and all of your info will automatically be updated
          image: Logo,
        },
      ];
-     ```
-
-## Updating the Contact section
-
-![Contact Preview](/README_images/contact.png)
-
-1. The contact form uses [Formspree](https://formspree.io/), create an account and add your endpoint URL ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/0133fcc02ab048fefcf73825d02385ffe27c3721/src/data.js#L108) lines 108-113)
-
-   - ```javascript
-     /* Contact Info
-      ************************************************************** 
-      Add your formspree endpoint below.
-      https://formspree.io/
-     */
-     export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
      ```
 
 ## Deploy
