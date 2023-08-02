@@ -7,6 +7,7 @@ import { moreInfo } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import sanitizeHtml from "sanitize-html";
 
 const StyledAboutMe = styled.section`
   p {
@@ -17,6 +18,15 @@ const StyledAboutMe = styled.section`
     height: 18rem;
   }
 `;
+
+// possible add link to career Karma articles
+// https://careerkarma.com/blog/how-to-build-a-strong-tech-career-with-codesmith/
+
+// CS blogs written by me
+// https://www.codesmith.io/blog/containerize-your-application-with-docker
+// https://www.codesmith.io/blog/codesmith-vs-cs-degree
+
+
 
 export default function AboutMe() {
   const { avatar_url, bio } = useSelector(selectData);
@@ -35,7 +45,7 @@ export default function AboutMe() {
             <Col className="d-flex flex-column text-center">
               <Container>
                 <p>{bio}</p>
-                {moreInfo && <p>{moreInfo}</p>}
+                {moreInfo && moreInfo}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">
