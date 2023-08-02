@@ -34,7 +34,7 @@ const themes = {
   },
 };
 
-mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN, { track_pageview: true, persistence: 'localStorage' });
+mixpanel.init(process.env.REACT_APP_MIXPANEL_TOKEN, { track_pageview: true, persistence: 'localStorage' });
 
 export default function App() {
   const { theme, setTheme } = useAppContext();
