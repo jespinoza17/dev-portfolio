@@ -7,7 +7,6 @@ import { moreInfo } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
-import sanitizeHtml from "sanitize-html";
 
 const StyledAboutMe = styled.section`
   p {
